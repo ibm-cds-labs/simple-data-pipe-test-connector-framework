@@ -2,6 +2,7 @@
 # Simple Data Pipe connector framework test
 
 1. Clone the Simple Data Pipe application and add this repository branch as a dependency
+    `"valid_connector_dependencies": "https://github.com/ibm-cds-labs/simple-data-pipe-test-connector-framework.git#valid_connector_declarations",`
 2. Run the Cloud Foundry commands in [cf_setup.txt](https://github.com/ibm-cds-labs/simple-data-pipe-test-connector-framework/blob/valid_connector_declarations/cf_setup.txt) 
 3. Review the log console output: all connectors should be loaded successfully
 
