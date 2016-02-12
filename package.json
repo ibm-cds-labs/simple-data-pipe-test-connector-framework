@@ -1,21 +1,36 @@
 {
-  "name": "simple-data-pipe-connector-template",
+  "name": "simple-data-pipe-test-connector-framework",
   "version": "0.1.0",
-  "description": "Basic connector template for Simple Data Pipe",
+  "description": "Connector with one valid service dependency",
   "main": "./lib",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ibm-cds-labs/simple-data-pipe-connector-template"
+    "url": "https://github.com/ibm-cds-labs/simple-data-pipe-test-connector-framework"
   },
   "simple_data_pipe": {
-    "name": "template",
-    "service_dependencies": []
+    "name": "simple-data-pipe-valid-connector-spec",
+    "service_dependencies": [
+                              {
+                                "service_name"  : "service_with_no_plan_or_instance",
+                                "vcap_env_service_alias" : "WATSON_TONE_ANALYZER"                               
+                              },
+                              {
+                                "service_name"  : "service_declaration_with_no_plan",
+                                "instance_name" : "so lousy"                               
+                              },
+                              {
+                                "service_name"  : "service_declaration_with_no_instance",
+                                "service_plan"  : "Free"
+                              },
+                              {
+                                "service_plan"  : "Free",
+                                "instance_name" : "no service"                               
+                              }
+    ]
   },
   "keywords": [
-    "simple data pipe",
-    "connector",
-    "Cloudant",
-    "data movement"
+    "test",
+    "Simple Data Pipe"
   ],
   "dependencies": {
     "lodash": "^4.3.0",
@@ -24,7 +39,7 @@
   "author": "ptitzler@us.ibm.com",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/ibm-cds-labs/simple-data-pipe-connector-template/issues"
+    "url": "https://github.com/ibm-cds-labs/simple-data-pipe-test-connector-framework"
   },
   "readmeFilename": "README.md"
 }
