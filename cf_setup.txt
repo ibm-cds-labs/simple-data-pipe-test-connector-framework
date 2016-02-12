@@ -1,0 +1,22 @@
+# cf create-service SERVICE PLAN SERVICE_INSTANCE
+# cf set-env APP_NAME ENV_VAR_NAME ENV_VAR_VALUE
+
+cf t -s test
+# simple data pipe service
+cf create-service cloudantNoSQLDB Shared sdp-cloudant-service
+cf push -n simple-data-pipe-framework-test
+
+#
+# connector specific services
+#
+
+# expected service instance name: Free Insights for Twitter
+cf create-service twitterinsights Free "Insights for Twitter"
+
+# expected service instance name: "tone analyzer"
+# use env variable value as alias
+cf create-service tone_analyzer beta "my tone analyzer"
+cf set-env simple-data-pipe WATSON_TONE_ANALYZER "my tone analyzer"
+cf restage simple-data-pipe
+
+
