@@ -1,34 +1,9 @@
-> Hey there! So you want to build your own Simple Data Pipe connector? [Start here](https://github.com/ibm-cds-labs/simple-data-pipe-connector-template/wiki/How-to-build-a-Simple-Data-Pipe-connector-using-this-template).
 
-***
+# Simple Data Pipe connector framework test
 
-
-# Simple Data Pipe &lt;TEMPLATE&gt; Connector 
-
-[Simple Data Pipe](https://developer.ibm.com/clouddataservices/simple-data-pipe/) connector for [&lt;TEMPLATE&gt;](http://<ADD_DATA_SOURCE_URL>/).
-
-### Pre-requisites
-
-##### General 
- _Describe general connector prerequisites, such as what type of account is required to access the data source, etc_
-
-##### Deploy the Simple Data Pipe
-
- [Deploy the Simple Data Pipe in Bluemix](https://github.com/ibm-cds-labs/simple-data-pipe) using the Deploy to Bluemix button or manually.
-
-##### Services
-_If this connector requires Bluemix services list them here. Otherwise remove this section._
-
-##### Install the &lt;TEMPLATE&gt; connector
-
-Install the connector using [these instructions](https://github.com/ibm-cds-labs/simple-data-pipe/wiki/Installing-a-Simple-Data-Pipe-Connector) into the Simple Data Pipe.  
-
-##### Enable OAuth support and collect connectivity information
- _Describe where the user can find &lt;TEMPLATE&gt; specific oAuth information._
-
-### Using the &lt;TEMPLATE&gt; Connector 
-
- _Describe how to use &lt;TEMPLATE&gt; in Simple Data Pipe_
+1. Clone the Simple Data Pipe application and add this repository branch as a dependency
+2. Run the Cloud Foundry commands in [cf_setup.txt](https://github.com/ibm-cds-labs/simple-data-pipe-test-connector-framework/blob/valid_connector_declarations/cf_setup.txt) 
+3. Review the log console output: all connectors should be loaded successfully
 
 #### License 
 
