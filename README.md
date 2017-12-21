@@ -1,3 +1,5 @@
+:no_entry_sign: This project is no longer maintained.
+
 
 Each branch contains a Simple Data Pipe connector framework test scenario.
  * valid_connector_declarations
